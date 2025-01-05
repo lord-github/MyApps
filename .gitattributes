@@ -1,0 +1,3 @@
+*.java linguist-language=Java
+*.php linguist-language=PHP
+*.kt linguist-language=Kotlin
