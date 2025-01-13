@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="renk1">#B7C7B8</color>
+    <color name="renk2">#43C8FF</color>
+    <color name="renk3">#757575</color>
+    <color name="renk4">#E3EEF2</color>
+    <color name="sary">#FDC314</color>
+    <color name="yasyl">#005A04</color>
+    <color name="yy">#49FD51</color>
+    <color name="otkazuser">#F41302</color>
+    <color name="otkazakaz">#FB8F87</color>
+    <color name="deff">#0B1A21</color>
+</resources>

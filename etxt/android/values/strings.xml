@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">eHyzmat</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="toleg">*Töleg 1(bir) günüň dowamynda geçiriler\nÇykarylýan minimal töleg 30tmt maksimal 50tmt\nÇykarylýan summadan 2% tutum tutlýandyr</string>
+    <string name="yumus">Jemi ýumuşlar - </string>
+    <string name="yeryet">Ýerine ýetirilen - </string>
+    <string name="zakazpri">Ýumuş beriji tarapyndan kabul edilen - </string>
+    <string name="ultartap">Ulanyjy tarapyndan ret edilen - </string>
+    <string name="zakaz">Ýumuş beriji tarapyndan ret edilen - </string>
+    <string name="bar">Barlagda - </string>
+</resources>
