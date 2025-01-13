@@ -1,8 +1,8 @@
 <?php 
 include 'connect.php' ;
-$id=$_GET['id'];
+$id=$_GET['md'];
 $mass=array();
-$sql="SELECT count(tb) as sany  FROM `finsh` where userid=".$id." and tassyklanan=1 and toleg_stat=0";
+$sql="SELECT status  FROM `tempreq` where md=".$id;
 $stmt=$conn->prepare($sql);
 // echo $sql;
 $stmt->execute();
@@ -12,7 +12,7 @@ while ($stmt->fetch()) {
 	// code...
 
 	$temp=[
-		'rey'=>$t1
+		'stat'=>$t1
 ];
 array_push($mass, $temp);
 }

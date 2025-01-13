@@ -2,17 +2,16 @@
 include 'connect.php' ;
 $id=$_GET['id'];
 $mass=array();
-$sql="SELECT count(tb) as sany  FROM `finsh` where userid=".$id." and tassyklanan=1 and toleg_stat=0";
+$sql="SELECT count(tb) as sany  FROM `finsh` where tassyklanan=1 and  userid=".$id;
 $stmt=$conn->prepare($sql);
 // echo $sql;
 $stmt->execute();
 $stmt->bind_result($t1);
 
 while ($stmt->fetch()) {
-	// code...
-
+	
 	$temp=[
-		'rey'=>$t1
+		'sany'=>$t1
 ];
 array_push($mass, $temp);
 }

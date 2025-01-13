@@ -21,6 +21,14 @@ $wagt=date('Y-m-d H:i:s', $timestamp);
 
 if ($conn->query($sql) === TRUE) {
   echo "Hasaba alyndy";
+$na=$bir_baha*$jemi;
+   $sql = "Update `users` set money=money-".$na." where ustb=".$zakazid;
+   if ($conn->query($sql) === TRUE) {
+    echo "OK!";
+   } else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+   }
+ 
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }

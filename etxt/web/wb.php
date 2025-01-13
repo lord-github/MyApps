@@ -2,7 +2,7 @@
 include 'connect.php' ;
 $id=$_GET['id'];
 $mass=array();
-$sql="SELECT count(tb) as sany  FROM `finsh` where userid=".$id." and tassyklanan=1 and toleg_stat=0";
+$sql="SELECT sum(ser) as toleg from `wywodrequest` where num=".$id;
 $stmt=$conn->prepare($sql);
 // echo $sql;
 $stmt->execute();

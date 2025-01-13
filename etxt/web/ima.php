@@ -4,7 +4,7 @@ $imageName = isset($_GET['image']) ? $_GET['image'] : null;
 // Проверяем, что файл существует
 $imagePath = 'uploads/' . $imageName; // Папка, где хранятся изображения
 if ($imageName === null || !file_exists($imagePath)) {
-    die('Изображение не найдено.');
+    die('Maglumat ýok...');
 }
 ?>
 
