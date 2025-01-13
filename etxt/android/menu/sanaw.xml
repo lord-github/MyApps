@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title=" "
+        android:id="@+id/esasmenu"
+        android:icon="@drawable/portfolio_48px"/>
+    <item android:title=" "
+        android:id="@+id/addmenu"
+        android:icon="@drawable/folder28px"/>
+    <item android:title=" "
+        android:id="@+id/smsmenu"
+        android:icon="@drawable/group_message_60px"/>
+</menu>

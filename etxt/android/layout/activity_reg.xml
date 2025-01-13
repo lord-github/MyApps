@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".reg">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_margin="5dp"
+                android:text="Registrasiýa"
+                android:fontFamily="serif"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/regtext"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/saylaw"
+                android:padding="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:layout_below="@id/regtext"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="10dp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:id="@+id/jynsy2"
+                android:layout_marginRight="25dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/saylaw"
+                android:layout_marginTop="-25dp"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/login"
+                android:lines="0"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/faa"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="serif"
+                android:hint="   login"
+                android:padding="10dp" />
+            <EditText
+                android:id="@+id/faa"
+                android:lines="0"
+                android:inputType="textPersonName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/saylaw"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="serif"
+                android:hint="   F.A.Aa"
+                android:padding="10dp" />
+            <EditText
+                android:lines="0"
+                android:drawableLeft="@drawable/unlock_20px"
+                android:inputType="textPassword"
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login"
+                android:layout_marginStart="25dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginRight="25dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/edit_text_background"
+                android:fontFamily="serif"
+                android:hint="   Parol"
+                android:padding="10dp" />
+
+            <EditText
+                android:layout_marginTop="20dp"
+                android:hint="   Paroly gaýtalaň"
+                android:fontFamily="serif"
+                android:layout_below="@id/password"
+                android:id="@+id/repeatpassword"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:drawableLeft="@drawable/unlock_20px"
+                android:lines="0"
+                android:inputType="textPassword"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <EditText
+                android:layout_marginTop="25dp"
+                android:hint="   Telefon belgi"
+                android:fontFamily="serif"
+                android:layout_below="@id/repeatpassword"
+                android:id="@+id/phone"
+                android:lines="0"
+                android:drawableLeft="@drawable/call_squared_24px"
+                android:maxLength="8"
+                android:inputType="phone"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <Button
+                android:fontFamily="serif"
+                android:layout_marginTop="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/phone"
+                android:id="@+id/okbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasaba almak"/>
+            <WebView
+                android:visibility="invisible"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webinsert"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

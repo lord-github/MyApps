@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/secondpagge"
+        android:title="Ýumuşlar"
+        android:icon="@drawable/increase_48px"
+        />
+    <item android:id="@+id/firstpagge"
+    android:title="Hereketler"
+    android:icon="@drawable/list_of_thumbnails_48px"
+    />
+
+</menu>

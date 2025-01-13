@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".addpage">
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:id="@+id/netss"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:background="@color/white"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:id="@+id/ade"
+                android:fontFamily="@font/audiowide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ulgamdan çykmak"/>
+<androidx.cardview.widget.CardView
+    android:layout_margin="2dp"
+    app:cardCornerRadius="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+    <RelativeLayout
+        android:background="#0B1A21"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_alignRight="@id/ortalyk"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/yaz11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Siziň hasabyňyz"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/audiowide"
+                android:textColor="@color/white"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.0 tm"
+                android:id="@+id/adbalance"
+                android:layout_below="@id/yaz11"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textSize="18dp"
+                android:fontFamily="@font/audiowide"
+                android:textColor="@color/white"/>
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:background="@color/white"
+            android:layout_margin="8dp"
+            android:id="@+id/ortalyk"
+            android:layout_centerInParent="true"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@id/ortalyk">
+
+            <TextView
+                android:id="@+id/seneq"
+                android:gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/audiowide"
+                android:text="09.01.2025"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+
+            <Button
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="2dp"
+                android:id="@+id/addpayment"
+    android:fontFamily="@font/comfortaa_bold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Hasabymy doldurmak"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:text="Döredilen ýumuşlar" />
+
+            <LinearLayout
+                android:layout_margin="1dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yums"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"/>
+            <LinearLayout
+                android:layout_margin="1dp"
+                android:background="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:fontFamily="@font/audiowide"
+                android:text="Ýerine ýetirilenler" />
+            <Spinner
+                android:layout_marginTop="5dp"
+                android:id="@+id/timelist"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1dp"
+                android:id="@+id/gorkezz"
+                android:layout_marginRight="1dp"/>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_margin="5dp"
+    android:background="@color/black"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="25dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lg"/>
+            <TextView
+                android:layout_marginTop="15dp"
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:textSize="19dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:text="Ýumuş döremek bölümi" />
+
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/audiowide"
+                android:text="Işiň görnüşi *" />
+            <Spinner
+                android:layout_marginTop="15dp"
+                android:id="@+id/zadanialist"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/amallarpole"
+                android:name="com.bbstudios.ecash.yumuslar.Googlemaps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+<WebView
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/addweb"/>
+</RelativeLayout>

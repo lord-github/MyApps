@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="75dp"
+    android:layout_marginBottom="75dp"
+    android:layout_marginRight="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="120dp"
+            android:layout_margin="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logun"
+            android:layout_height="120dp"/>
+
+        <ImageView
+            android:id="@+id/loginclose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@drawable/exit" />
+        
+        <TextView
+            android:id="@+id/lyazgy"
+            android:layout_below="@id/loginclose"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textStyle="bold"
+            android:textSize="22dp"
+            android:fontFamily="@font/audiowide"
+            android:layout_centerHorizontal="true"/>
+        
+        <EditText
+            android:layout_marginTop="75dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="8dp"
+            android:inputType="text"
+            android:maxLines="0"
+            android:hint="   login"
+            android:fontFamily="serif"
+            android:id="@+id/editlogin"
+            android:layout_below="@id/lyazgy"
+            android:background="@drawable/editcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+        <EditText
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:padding="8dp"
+            android:hint="     parol"
+            android:fontFamily="serif"
+            android:id="@+id/editpass"
+            android:inputType="textPassword"
+            android:layout_below="@id/editlogin"
+            android:background="@drawable/editcal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:layout_marginTop="35dp"
+            android:id="@+id/ulgamagir"
+            android:layout_below="@id/editpass"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/audiowide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ulgama gir"/>
+
+        <Button
+            android:layout_marginTop="15dp"
+            android:id="@+id/gotoregisty"
+            android:layout_below="@id/ulgamagir"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/audiowide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:text="   Registrasiýa    "/>
+        <TextView
+            android:fontFamily="@font/audiowide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:textSize="15dp"
+            android:layout_marginBottom="8dp"
+            android:layout_below="@id/gotoregisty"
+            android:text="©Ashgabat, Turkmenistan"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
+</RelativeLayout>

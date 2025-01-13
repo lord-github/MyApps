@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".yumuslar.yandex">
+
+    <LinearLayout
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="5dp"
+            android:layout_height="wrap_content">
+            <TextView
+
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Işiň ady *"/>
+            <EditText
+                android:background="@drawable/editcal"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="serif"
+                android:padding="8dp"
+                android:id="@+id/nameOfyan"
+                android:layout_marginTop="39dp"
+                android:inputType="text"
+                android:lines="1"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:text=" "/>
+
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="8dp"
+                android:layout_marginTop="1dp"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:background="@color/black"
+                    android:layout_width="45dp"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/yand"
+                        android:layout_width="35dp"
+                        android:layout_height="35dp"/>
+                      </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ýumuşyň  sany"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <EditText
+                android:background="@drawable/editcal"
+                android:layout_margin="5dp"
+                android:fontFamily="serif"
+                android:padding="8dp"
+                android:inputType="number"
+                android:id="@+id/yumusanyyan"
+                android:lines="0"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="5"/>
+
+            <TextView
+                android:fontFamily="serif"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12dp"
+                android:text="*Bir ýerine ýetirilen ýumuşyň\n minimal bahasy 0.2 manat"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/renk4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ýerine ýetirijileriň süzgüji"/>
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Bu bölümde öz islegiňize görä ýerine ýetirijileri saýlap bilersiňiz"/>
+
+
+        <TextView
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ýumuşyň düşündirilişi *"/>
+
+        <EditText
+            android:id="@+id/Editdusungoogleyan"
+            android:layout_width="match_parent"
+            android:layout_height="135dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/editcal"
+            android:fontFamily="serif"
+            android:lines="4"
+            android:padding="8dp"
+            android:text=""
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:layout_marginBottom="12dp"
+            android:textSize="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ýumuşyň tehniki bölümini düşündiriň. Biz size gönümel edara geçiň bolýan salgylanmalary hödürlemegi maslahat bermeýäris. Ondan şol edarany tapmak üçin gözlegde girizmeli sözi görkeziň."/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teswiriň  görnüşi *"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <Spinner
+                android:layout_marginTop="25dp"
+                android:id="@+id/tematikayan"
+                android:background="@drawable/custom_spinner_background"
+                android:layout_width="190dp"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginLeft="5dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_gravity="center_vertical"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="* Teswiriň görnüşini saýla"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simwollaryň sany * "/>
+        <EditText
+            android:background="@drawable/editcal"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:padding="8dp"
+            android:inputType="number"
+            android:lines="1"
+            android:id="@+id/sanysimyan"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text=" "/>
+
+        <TextView
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teswirleriň ýazylmaly dili* "/>
+        <Spinner
+            android:layout_marginTop="25dp"
+            android:id="@+id/tesdiliyan"
+            android:background="@drawable/custom_spinner_background"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/renk4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="Bir ýumuşyň bahasy : "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="11dp"
+                android:fontFamily="serif"/>
+            <TextView
+                android:text="0.2 manat"
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_margin="2dp"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="5 ýumuşyň bahasy : "
+                android:textSize="11dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"/>
+            <TextView
+                android:text="1 manat "
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="11dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="serif"/>
+        </LinearLayout>
+
+
+        <Button
+            android:layout_gravity="right"
+            android:layout_marginRight="15dp"
+            android:fontFamily="serif"
+            android:id="@+id/sendgooglemapyan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Moderatora ugratmak"/>
+        <WebView
+            android:id="@+id/insertmapsyan"
+            android:visibility="invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+
+</FrameLayout>

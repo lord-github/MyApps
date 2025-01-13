@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/pull"
+    android:background="@drawable/rounded_top_dialog"
+    android:layout_height="405dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:drawableRight="@drawable/us_dollar_circled_48px"
+        android:gravity="center_vertical"
+        android:drawableLeft="@drawable/us_dollar_circled_48px"
+        android:layout_margin="5dp"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Hasapdan serişdeleri çykarmak"/>
+        <TextView
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:textSize="16dp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/comfortaa_bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Siziň hasabyňyz"/>
+    <EditText
+        android:editable="false"
+        android:padding="7dp"
+        android:id="@+id/hasabym"
+        android:focusable="false"
+        android:text="0.0"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editcal"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        android:textSize="16dp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/comfortaa_bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çykarmaly summa"/>
+    <EditText
+        android:padding="7dp"
+        android:text="0.0"
+        android:id="@+id/cykarjakpul"
+        android:fontFamily="serif"
+        android:textColor="@color/black"
+        android:layout_marginLeft="35dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/editcal"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:layout_margin="5dp"
+        android:fontFamily="serif"
+        android:id="@+id/transfermoney"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasaba almak"/>
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:fontFamily="serif"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toleg"/>
+<WebView
+    android:visibility="invisible"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/wywodweb"/>
+</LinearLayout>

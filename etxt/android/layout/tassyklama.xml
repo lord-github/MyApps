@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/lastone"
+    android:background="@drawable/rd2"
+    android:layout_width="match_parent"
+    android:layout_height="456dp">
+    <androidx.core.widget.NestedScrollView
+        android:fillViewport="true"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Netijeler"
+                android:textSize="18dp"
+                android:layout_marginBottom="5dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/audiowide"/>
+
+            <WebView
+                android:layout_margin="20dp"
+                android:id="@+id/gor1"
+                android:scrollbars="vertical|horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"/>
+            <WebView
+                android:layout_margin="20dp"
+                android:id="@+id/gor2"
+                android:scrollbars="vertical|horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"/>
+            <WebView
+                android:layout_margin="20dp"
+                android:id="@+id/gor3"
+                android:scrollbars="vertical|horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="290dp"/>
+
+            <LinearLayout
+                android:layout_marginBottom="5dp"
+                android:id="@+id/asakybolum2"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:background="@color/yasyl"
+                        android:id="@+id/prinyat"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/audiowide"
+                        android:layout_height="wrap_content"
+                        android:text="Tassyklamak"/>
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    app:cardCornerRadius="12dp"
+
+                    android:layout_marginLeft="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:background="@color/otkazuser"
+                        android:textColor="@color/white"
+                        android:textAllCaps="false"
+                        android:id="@+id/otkazz"
+                        android:paddingRight="5dp"
+                        android:paddingLeft="5dp"
+                        android:fontFamily="@font/audiowide"
+                        android:layout_height="wrap_content"
+                        android:text=" Ret etmek "/>
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

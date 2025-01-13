@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".yumuslar.admin_ulanyjy">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+
+            android:layout_height="match_parent">
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="150dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp">
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="55dp"
+                        app:cardCornerRadius="45dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_height="55dp">
+                        <ImageView
+                            android:src="@drawable/male"
+                            android:id="@+id/profilesurat"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"/>
+                    </androidx.cardview.widget.CardView>
+<ImageView
+    android:layout_margin="15dp"
+    android:layout_alignParentRight="true"
+    android:layout_width="45dp"
+    android:layout_height="45dp"
+    android:src="@drawable/account_52px"/>
+                    <TextView
+                        android:text="_google_1102919"
+                        android:layout_marginLeft="85dp"
+                        android:textSize="17dp"
+                        android:id="@+id/myname"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"/>
+                    <ImageView
+                        android:layout_marginTop="57dp"
+                        android:layout_marginLeft="89dp"
+                        android:src="@drawable/crown_128px"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"/>
+                    <TextView
+                        android:text="0"
+                        android:layout_marginLeft="118dp"
+                        android:textSize="14dp"
+                        android:id="@+id/reytingID"
+                        android:layout_marginTop="61dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/audiowide"/>
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_marginTop="65dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.cardview.widget.CardView
+                        android:layout_marginTop="25dp"
+                        app:cardCornerRadius="12dp"
+
+                        android:layout_centerHorizontal="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <RelativeLayout
+                            android:background="#E6EAE6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:padding="8dp"
+                                android:id="@+id/changeme"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Akkaundyň sazlamalary"/>
+                        </RelativeLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="185dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="20dp"
+                        android:fontFamily="serif"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Maliýe"
+                        android:textStyle="bold"/>
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/amatly"
+                        android:layout_marginRight="130dp"
+                        android:layout_alignParentRight="true"/>
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="42dp"
+                        android:background="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:fontFamily="serif"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:textColor="#057819"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Goragly şertler"/>
+                </RelativeLayout>
+                <ImageView
+                    android:layout_marginTop="49dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_gravity="right"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/money_48px"/>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:drawableLeft="@drawable/wallet_25px"
+                            android:drawablePadding="5dp"
+                            android:textSize="18dp"
+                            android:id="@+id/mybalance"
+                            android:fontFamily="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.0 TMT"/>
+
+
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/lock_25px"
+                            />
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:drawablePadding="5dp"
+                            android:textSize="18dp"
+                            android:id="@+id/zadanbala"
+                            android:fontFamily="serif"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0 TMT"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/logout_rounded_up_25px"
+                            />
+                        <TextView
+                            android:layout_marginLeft="30dp"
+                            android:drawablePadding="5dp"
+                            android:textSize="18dp"
+                            android:fontFamily="serif"
+                            android:id="@+id/sredwywod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00 TMT"/>
+
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13sp"
+                        android:id="@+id/cykarmeni"
+                        android:fontFamily="serif"
+                        android:layout_gravity="end"
+                        android:layout_marginRight="5dp"
+                        android:text="Serişdeleri çykarmak"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_margin="20dp"
+                app:cardCornerRadius="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="185dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="22dp"
+                        android:fontFamily="serif"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IP salgy :  "
+                        android:textStyle="bold"/>
+
+                    <RelativeLayout
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="42dp"
+                        android:background="@color/black"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp">
+                    </RelativeLayout>
+
+                    <TextView
+                        android:textSize="16dp"
+                        android:fontFamily="serif"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:textStyle="bold"
+                        android:id="@+id/lastip"
+                        android:textColor="#3F51B5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-"/>
+                </RelativeLayout>
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_marginTop="45dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                    <RelativeLayout
+                        android:layout_marginTop="2dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+
+                        android:layout_marginLeft="15dp"
+                        android:text="Soňky ip salgylar : "/>
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:layout_width="match_parent"
+                        android:id="@+id/iplist"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_height="match_parent"/>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/whoweare"
+                android:layout_margin="25dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/lg"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</FrameLayout>

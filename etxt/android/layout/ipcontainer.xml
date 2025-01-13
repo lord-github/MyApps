@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/rounded_top_dialog"
+    android:id="@+id/modalBottomSheetContainer1"
+    android:layout_height="179dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/comfortaa_bold"
+        android:text="Server IP address"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content">
+     <EditText
+         android:layout_marginTop="5dp"
+         android:layout_marginRight="180dp"
+         android:layout_marginLeft="35dp"
+         android:padding="7dp"
+         android:maxLength="15"
+         android:singleLine="true"
+         android:imeOptions="actionDone"
+         android:text="192.168.1.100"
+         android:fontFamily="serif"
+         android:background="@drawable/editcal"
+         android:id="@+id/serwerIP"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"/>
+
+     <pl.droidsonroids.gif.GifImageView
+         android:layout_width="95dp"
+         android:layout_height="95dp"
+         android:layout_alignParentRight="true"
+         android:layout_marginRight="15dp"
+         android:layout_marginBottom="2dp"
+         android:scaleType="centerCrop"
+         android:src="@drawable/ipucin" />
+
+     <Button
+         android:id="@+id/kabulet"
+         android:layout_marginTop="55dp"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:fontFamily="@font/audiowide"
+         android:text="ok" />
+ </RelativeLayout>
+
+
+</LinearLayout>

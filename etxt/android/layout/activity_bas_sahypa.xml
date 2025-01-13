@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Bas_sahypa">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:fontFamily="@font/audiowide"
+            android:onClick="g2"
+            android:text="Hoş geldiňiz "
+            android:textSize="24dp"
+            android:textStyle="bold" />
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_marginRight="65dp"
+            android:layout_centerVertical="true"
+            android:layout_height="45dp"
+            android:onClick="regac"
+            android:src="@drawable/add_user_male_48px"
+            android:layout_alignParentRight="true"/>
+
+        <ImageView
+            android:layout_marginRight="12dp"
+            android:layout_width="45dp"
+            android:src="@drawable/login_100px"
+            android:layout_centerVertical="true"
+            android:layout_height="45dp"
+            android:id="@+id/loginimage"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="85dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:id="@+id/karusel"
+
+                android:layout_height="270dp"/>
+
+
+            <RelativeLayout
+                android:layout_margin="5dp"
+                android:id="@+id/blokdusun"
+                android:layout_below="@id/karusel"
+                android:layout_width="match_parent"
+                android:layout_height="190dp">
+                <TextView
+                    android:fontFamily="@font/audiowide"
+                    android:layout_margin="5dp"
+                    android:textSize="18dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Modul nähili işleýär?"/>
+
+
+
+                <LinearLayout
+                    android:layout_margin="5dp"
+
+                    android:orientation="horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="1"
+                                android:textSize="28dp"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="10dp"
+                                    android:layout_marginTop="1dp"
+                                    app:cardCornerRadius="40dp"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_height="10dp">
+                                    <RelativeLayout
+                                        android:background="@color/renk3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:background="@color/renk3"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="Özüňiz laýyk gelýän ýumuşy tapyň we ýerine ýetiriň"
+                                android:textSize="11dp"
+
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="    2"
+                                android:textSize="28dp"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="10dp"
+                                    android:layout_marginTop="1dp"
+                                    app:cardCornerRadius="40dp"
+                                    android:layout_marginLeft="40dp"
+                                    android:layout_height="10dp">
+                                    <RelativeLayout
+                                        android:background="@color/renk3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </androidx.cardview.widget.CardView>
+
+                                <LinearLayout
+                                    android:background="@color/renk3"
+
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="1dp"/>
+                            </RelativeLayout>
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="Ýumuş beriji  ýumuşy tassyklaýança garaşyň"
+                                android:textSize="11dp"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_marginTop="35dp"
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:layout_marginTop="5dp"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="      3"
+                                android:textSize="28dp"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content">
+
+
+                                <LinearLayout
+                                    android:background="@color/renk3"
+
+                                    android:layout_marginTop="5dp"
+                                    android:layout_width="65dp"
+                                    android:layout_height="1dp"/>
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="10dp"
+
+                                    app:cardCornerRadius="40dp"
+                                    android:layout_marginLeft="65dp"
+                                    android:layout_height="10dp">
+                                    <RelativeLayout
+                                        android:background="@color/renk3"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent"/>
+                                </androidx.cardview.widget.CardView>
+                            </RelativeLayout>
+                            <TextView
+                                android:layout_margin="10dp"
+                                android:text="Görkezilen şertler esasynda ýumuşy ýerine ýetiriň we baýragy alyň"
+                                android:textSize="11dp"
+                                android:fontFamily="serif"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <pl.droidsonroids.gif.GifImageView
+                android:layout_below="@id/blokdusun"
+                android:layout_marginTop="10dp"
+                android:id="@+id/reklama"
+                android:layout_centerHorizontal="true"
+                android:scaleType="centerCrop"
+                android:layout_width="180dp"
+                android:layout_height="180dp"
+                android:src="@drawable/example"/>
+
+            <TextView
+                android:padding="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_below="@id/reklama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="g3"
+                android:textSize="19dp"
+                android:text="SMM modulny dolandyryjy ulgamy"/>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>
