@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ballFragment">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="Ball goşmak"
+        android:fontFamily="serif"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/yas"/>
+    <RadioGroup
+        android:layout_marginTop="32dp"
+        android:id="@+id/Radgrup"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:fontFamily="serif"
+            android:paddingRight="20dp"
+            android:id="@+id/balmug"
+            android:layout_marginTop="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mugallym"/>
+        <RadioButton
+            android:layout_marginTop="-10dp"
+            android:fontFamily="serif"
+            android:id="@+id/baltal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Talyp"/>
+
+    </RadioGroup>
+<ScrollView
+    android:layout_below="@id/Radgrup"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="-5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fakultet"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:textSize="18dp"/>
+
+            <RadioGroup
+                android:id="@+id/Radgrup2"
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-12dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/ngf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nebit we gaz"/>
+
+                <RadioButton
+                    android:layout_marginTop="-12dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/gf"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Geologiýa"/>
+
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="-12dp"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/eidf"
+                    android:layout_height="wrap_content"
+                    android:text="Energetika we inženerçilik desgalary"/>
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:layout_marginTop="-12dp"
+                    android:id="@+id/htef"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Himiýa tehnologiýasy we ekologiýa"/>
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/ydf"
+                    android:layout_marginTop="-12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ykdysadyýet we dolandyryş"/>
+                <RadioButton
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="serif"
+                    android:id="@+id/stkf"
+                    android:layout_marginTop="-12dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sanly tehnologiýalar we kiberhowpsuzlyk
+"/>
+            </RadioGroup>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:id="@+id/gozmey"
+    android:layout_below="@id/Radgrup2">
+<EditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edit_krug"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    android:inputType="text"
+    android:lines="0"
+    android:hint="F.A.A"
+    android:textSize="15dp"
+    android:id="@+id/adamgozlegmeydan"
+    android:fontFamily="serif"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:paddingLeft="15dp"
+
+    android:layout_marginRight="60dp"/>
+    <ImageView
+        android:layout_marginTop="6dp"
+        android:layout_marginRight="15dp"
+        android:layout_alignParentRight="true"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:id="@+id/gozlegknop"
+        android:src="@drawable/search_40px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:id="@+id/nettal"
+            android:textSize="15dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:fontFamily="serif"
+            android:layout_marginBottom="15dp"
+            android:layout_alignParentBottom="true"
+            />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="sene"
+        android:id="@+id/issene"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="18dp"
+        android:fontFamily="serif"
+        android:layout_marginBottom="15dp"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gozmey">
+            <Spinner
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/yeryetis"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/yeryetis"
+                android:text="Berilýän ball - 0"
+                android:textSize="16dp"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/berbal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hasaba almak"
+                android:fontFamily="serif"
+                android:textStyle="bold"
+                android:id="@+id/hal"
+                android:layout_below="@id/berbal"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+/>
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="50dp"
+                android:src="@drawable/chanellogo_transparent"
+                android:layout_below="@id/hal"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>
+    <WebView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/bbal"
+        android:visibility="invisible"/>
+</RelativeLayout>
+
+</FrameLayout>
